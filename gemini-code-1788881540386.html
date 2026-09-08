@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Siri Karam | Authentic Andhra Catering & Restaurant</title>
+  <style>
+    :root {
+      --primary: #9E2A2B;
+      --accent: #E09F3E;
+      --dark: #222222;
+      --light: #FFFDF9;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; }
+    body { background-color: var(--light); color: var(--dark); line-height: 1.6; }
+    
+    header { background: var(--primary); color: white; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; }
+    header h1 { font-size: 1.4rem; font-weight: 700; }
+    nav a { color: white; text-decoration: none; margin-left: 1.2rem; font-size: 0.95rem; }
+    
+    .hero { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('interior.jpg') center/cover; color: white; padding: 5rem 2rem; text-align: center; }
+    .hero h2 { font-size: 2.2rem; margin-bottom: 0.8rem; }
+    .btn { display: inline-block; background: var(--accent); color: white; padding: 0.7rem 1.4rem; border-radius: 4px; text-decoration: none; font-weight: bold; margin: 0.4rem; }
+    
+    .section { max-width: 960px; margin: 3rem auto; padding: 0 1.5rem; }
+    .section-title { font-size: 1.6rem; color: var(--primary); margin-bottom: 1.2rem; text-align: center; }
+    
+    .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+    .card { background: white; padding: 1.5rem; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid var(--primary); }
+    
+    form { display: grid; gap: 1rem; max-width: 500px; margin: 0 auto; }
+    input, select, textarea { padding: 0.7rem; border: 1px solid #ccc; border-radius: 4px; width: 100%; }
+    
+    footer { background: var(--dark); color: white; text-align: center; padding: 1.5rem; margin-top: 3rem; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Siri Karam</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#catering">Catering</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Taste the Soul of Andhra Home Cooking</h2>
+    <p>Daily Authentic Meals & Signature Bulk Event Catering</p>
+    <a href="tel:7204366779" class="btn">Call to Order</a>
+    <a href="#catering" class="btn" style="background: var(--primary);">Book Catering</a>
+  </section>
+
+  <section id="about" class="section">
+    <h3 class="section-title">Homestyle Kitchen & Catering</h3>
+    <p style="text-align:center;">Founded by Manoj Kumar, Siri Karam brings authentic, slow-cooked Andhra flavors directly to your plate—whether you need a hearty lunch or a feast for hundreds of guests.</p>
+  </section>
+
+  <section id="menu" class="section">
+    <h3 class="section-title">Our Specialties</h3>
+    <div class="menu-grid">
+      <div class="card">
+        <h4>Andhra Non-Veg Feasts</h4>
+        <p>Guntur Chicken Curry, Natu Kodi Pulusu, Mutton Roast, and fresh fish fries prepared with traditional spices.</p>
+      </div>
+      <div class="card">
+        <h4>Homestyle Andhra Veg</h4>
+        <p>Authentic Pappu-Charu combinations, Gutti Vankaya, Avakaya pachadis, and wholesome daily thalis.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="catering" class="section">
+    <h3 class="section-title">Event Catering Inquiries</h3>
+    <form action="https://formspree.io/f/placeholder" method="POST">
+      <input type="text" name="name" placeholder="Your Full Name" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <input type="number" name="guests" placeholder="Estimated Guests (e.g. 50, 200)" required>
+      <select name="type">
+        <option value="veg">Pure Vegetarian</option>
+        <option value="mixed">Non-Vegetarian & Veg Mix</option>
+      </select>
+      <textarea name="notes" placeholder="Event Date & Special Requirements" rows="3"></textarea>
+      <button type="submit" class="btn" style="border:none; cursor:pointer;">Submit Catering Request</button>
+    </form>
+  </section>
+
+  <section id="contact" class="section" style="text-align: center;">
+    <h3 class="section-title">Visit or Contact Us</h3>
+    <p><strong>Proprietor:</strong> Manoj Kumar</p>
+    <p><strong>Direct Line:</strong> <a href="tel:7204366779">+91 72043 66779</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Siri Karam Restaurant & Caterers. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
